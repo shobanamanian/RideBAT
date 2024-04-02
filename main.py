@@ -38,8 +38,7 @@ class RideTest(unittest.TestCase):
         next = driver.find_element(By.XPATH, '/html/body/app-root/app-signup/div/div[1]/div[3]/button')
         next.click()
         time.sleep(2)
-        # back = driver.find_element(By.XPATH, '/html/body/app-root/app-signup-authentication/div/div[1]/div[1]/button')
-        # back.click()
+
         otp1 = driver.find_element(By.XPATH, '/html/body/app-root/app-signup-authentication/div/div[1]/form/div/input[1]')
         otp1.send_keys("2")
         otp2 = driver.find_element(By.XPATH, '/html/body/app-root/app-signup-authentication/div/div[1]/form/div/input[2]')
@@ -51,9 +50,7 @@ class RideTest(unittest.TestCase):
         # submit = driver.find_element(By.XPATH, '/html/body/app-root/app-signup-authentication/div/div[1]/div[3]/button')
         # submit.click()
         # time.sleep(2)
-        # country_code = driver.find_element(By.XPATH,'/html/body/app-root/app-login/div/div[1]/div[2]/div[1]/input')
-        # country_code.send_keys("91")
-        # time.sleep(2)
+
         driver = self.driver
         driver.get("http://localhost:4200/login")
         time.sleep(2)
@@ -207,113 +204,6 @@ class RideTest(unittest.TestCase):
         submit = driver.find_element(By.XPATH,'/html/body/app-root/app-driver-further-details/div/div[1]/div[2]/button')
         submit.click()
         time.sleep(2)
-    #
-    # #
-    # # # def test_upload_documents_check(self):
-    # #     driver = self.driver
-    # #     driver.get("http://localhost:4200/driver-documents")
-    # #     time.sleep(2)
-    # #     driver.set_window_size(300, 700, "current")
-    # #     time.sleep(2)
-    # #
-    # #     image_path = "D://tree-736885_1280.jpg"
-    # #     driver.find_element(By.XPATH,'/html/body/app-root/app-driver-documents/div/div/form/div/div[1]/input').send_keys(image_path)
-    # #     time.sleep(2)
-    # #
-    # #     image_path ="D://1.jpg"
-    # #     driver.find_element(By.XPATH,'/html/body/app-root/app-driver-documents/div/div/form/div/div[2]/input').send_keys(image_path)
-    # #     time.sleep(2)
-    # #     image_path = "D://tree-736885_1280.jpg"
-    # #     driver.find_element(By.XPATH,'/html/body/app-root/app-driver-documents/div/div/form/div/div[3]/input').send_keys(image_path)
-    # #     time.sleep(2)
-    # #     image_path = "D://3.jpg"
-    # #     driver.find_element(By.XPATH,'/html/body/app-root/app-driver-documents/div/div/form/div/div[4]/input').send_keys(image_path)
-    # #     time.sleep(2)
-    # #     image_path = "D://tree-736885_1280.jpg"
-    # #     driver.find_element(By.XPATH,'/html/body/app-root/app-driver-documents/div/div/form/div/div[5]/input').send_keys(image_path)
-    # #     time.sleep(2)
-    # #     image_path = "D://6.jpg"
-    # #     driver.find_element(By.XPATH,'/html/body/app-root/app-driver-documents/div/div/form/div/div[6]/input').send_keys(image_path)
-    # #     time.sleep(2)
-    # #     submit = driver.find_element(By.XPATH,'/html/body/app-root/app-driver-documents/div/div/div[2]/button')
-    # #     submit.click()
-    # #     time.sleep(2)
-    #
-    # #
-    #     driver = self.driver
-    #     driver.get("http://localhost:4200/image-upload")
-    #     time.sleep(2)
-    #     driver.set_window_size(300, 700, "current")
-    #     time.sleep(2)
-    #     image_path = "D://tree-736885_1280.jpg"
-    #     driver.find_element(By.XPATH,'/html/body/app-root/app-profile-image-upload-page/div/div/div[6]/input').send_keys(image_path)
-    #     time.sleep(2)
-    #     submit = driver.find_element(By.XPATH,'/html/body/app-root/app-profile-image-upload-page/div/div/div[6]/button')
-    #     submit.click()
-    #     time.sleep(2)
-    #
-    #     driver = self.driver
-    #     driver.get("http://localhost:4200/licence-upload")
-    #     time.sleep(2)
-    #     driver.set_window_size(300, 700, "current")
-    #     time.sleep(2)
-    #     licence_number = driver.find_element(By.XPATH,'/html/body/app-root/app-license-upload-page/div/div/form/div/div[1]/input')
-    #     licence_number.send_keys("LTr45673")
-    #     time.sleep(2)
-    #     date_of_birth = driver.find_element(By.XPATH,'/html/body/app-root/app-license-upload-page/div/div/form/div/div[2]/input')
-    #     date_of_birth.send_keys("06/23/2024")
-    #     time.sleep(2)
-    #     submit = driver.find_element(By.XPATH,'/html/body/app-root/app-license-upload-page/div/div/div[3]/button')
-    #     submit.click()
-    #     time.sleep(2)
-    #
-    #     driver = self.driver
-    #     driver.get("http://localhost:4200/aadharcard-upload")
-    #     time.sleep(2)
-    #     driver.set_window_size(300, 700, "current")
-    #     time.sleep(2)
-    #     image_path = "D://6.jpg"
-    #     driver.find_element(By.XPATH,'/html/body/app-root/app-aadharcard-upload-page/div/div/div[5]/input').send_keys(image_path)
-    #     time.sleep(2)
-    #     submit = driver.find_element(By.XPATH,'/html/body/app-root/app-aadharcard-upload-page/div/div/div[5]/button')
-    #     submit.click()
-    #     time.sleep(2)
-    #
-    #     driver = self.driver
-    #     driver.get("http://localhost:4200/rc-upload")
-    #     time.sleep(2)
-    #     driver.set_window_size(300, 700, "current")
-    #     time.sleep(2)
-    #     licence_plate_number = driver.find_element(By.XPATH,'/html/body/app-root/app-rc-upload/div/div/div[4]/div[1]/input')
-    #     licence_plate_number.send_keys("56473")
-    #     time.sleep(2)
-    #     submit = driver.find_element(By.XPATH,'/html/body/app-root/app-rc-upload/div/div/div[5]/button')
-    #     submit.click()
-    #     time.sleep(2)
-    #
-    #     driver = self.driver
-    #     driver.get("http://localhost:4200/insurance-upload")
-    #     time.sleep(2)
-    #     driver.set_window_size(300, 700, "current")
-    #     time.sleep(2)
-    #     image_path = "D://3.jpg"
-    #     driver.find_element(By.XPATH, '/html/body/app-root/app-insurance-page/div/div/div[5]/input').send_keys(image_path)
-    #     time.sleep(2)
-    #     submit = driver.find_element(By.XPATH, '/html/body/app-root/app-insurance-page/div/div/div[5]/button')
-    #     submit.click()
-    #     time.sleep(2)
-    #
-    #     driver = self.driver
-    #     driver.get("http://localhost:4200/permit-upload")
-    #     time.sleep(2)
-    #     driver.set_window_size(300, 700, "current")
-    #     time.sleep(2)
-    #     image_path = "D://1.jpg"
-    #     driver.find_element(By.XPATH, '/html/body/app-root/app-permit-upload-page/div/div/div[5]/input').send_keys(image_path)
-    #     time.sleep(2)
-    #     submit = driver.find_element(By.XPATH, '/html/body/app-root/app-permit-upload-page/div/div/div[5]/button')
-    #     submit.click()
-    #     time.sleep(2)
 
         driver = self.driver
         driver.get("http://localhost:4200/settings")
@@ -421,7 +311,7 @@ class RideTest(unittest.TestCase):
         license_plate_number.send_keys("457348")
         time.sleep(2)
         image_path = "D://6.jpg"
-        driver.find_element(By.XPATH,'/html/body/app-root/app-rc-upload/div/div/form/div[2]/div[2]/input')
+        driver.find_element(By.XPATH,'/html/body/app-root/app-rc-upload/div/div/form/div[2]/div[2]/input').send_keys(image_path)
         time.sleep(2)
         submit = driver.find_element(By.XPATH,'/html/body/app-root/app-rc-upload/div/div/div[3]/button')
         submit.click()
